@@ -1,0 +1,25 @@
+if client requires any data -- it request to the server -- server sends corresponding response back to the 
+client -- from backend --- for that there are many methods -- they are:
+
+to get details from server to the client we use the GET details method
+fetched all the data from backend of the server --- to the client
+
+to submit different details of a book to the server for eg .
+like bookbane,price,author etc --- we will be using POST method -- creating
+
+to update the details of an object -- for eg book id -- PUT is the method -- updating
+
+to delete the details of an object--using its id -- DELETE is the method ---deleting 
+
+if needs to change only one field --- use PATCH
+
+Status codes--
+        --200 series --success
+        --300 series --redirectional
+        --400 series -- client error
+        --500 series -- server error
+
+--Synchronous task(activity) -- always keeps an order ---takes first request from client -- 
+                                                                     sends its response back from server--
+                                            --take second request -- sends its response back .
+--Asynchronous task(activity) --doesnot keeps an order.

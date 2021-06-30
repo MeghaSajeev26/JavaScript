@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="bookscript.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- style="background-image: url(gaman-alice-ZpnVeCKf6KM-unsplash.jpg); background-size: cover;"> --> -->
+<!-- bookname,author,price,pages--to include
+    key-- bookname
+    value--entire book
+    when pressing "create"-- everything should be updated in local storage -->
+
+<div class="container">
+    <div class="row ">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <h1>
+                <center>Book Dashboard</center>
+            </h1>
+            <form action="">
+                <div class="mb-2"><input type="text" id="b_name" class="form-control" placeholder="Book Name"></div>
+                <div class="mb-2"><input type="text" id="b_author" class="form-control" placeholder="Author"></div>
+                <div class="mb-2"><input type="text" id="pages" class="form-control" placeholder="Pages"></div>
+                <div class="mb-2"><input type="text" id="price" class="form-control" placeholder="Price"></div>
+                <center>
+                    <div class="mb-2"><button class="btn btn-outline-danger w-45" style="color: black;"
+                            onclick="createBook()">Create Book</button></div>
+                </center>
+                <div class="mb-2">
+                    <input type="text" id="bk_name" placeholder="Search Books">
+                    <button type="button" class="btn btn-outline-danger" style="color: black;" onclick="findBook()">Search</button>
+                </div>
+
+
+                    <div class="mb-2" id="result" onclick="displayBook()"></div>
+
+                    <div class="mb-2">
+                        <button type="button" class="btn btn-outline-danger" style="color: black;" onclick="allBooks()">List All Books</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>

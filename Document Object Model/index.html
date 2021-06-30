@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <center>
+        <div class="container">
+          <h1>Calculator</h1>
+          <div class="one">
+            <input type="text" class="result" id="inpt" placeholder="Result">
+          </div>
+          <div>
+            <input type="button" value="C" id="clr" class="clear" onclick="clear_box()">
+            <input type="button" value="<" id="del" class="delete" onclick="remove_element()">
+          </div>
+          <div class="two">
+            <input type="button" value="1" onclick="display_value('1')">
+            <input type="button" value="2" onclick="display_value('2')">
+            <input type="button" value="3" onclick="display_value('3')">
+            <input type="button" value="+" onclick="display_value('+')">
+          </div>
+          <div class="three">
+            <input type="button" value="4" onclick="display_value('4')">
+            <input type="button" value="5" onclick="display_value('5')">
+            <input type="button" value="6" onclick="display_value('6')">
+            <input type="button" value="-" onclick="display_value('-')">
+          </div>
+          <div class="four">
+            <input type="button" value="7" onclick="display_value('7')">
+            <input type="button" value="8" onclick="display_value('8')">
+            <input type="button" value="9" onclick="display_value('9')">
+            <input type="button" value="*" onclick="display_value('*')">
+          </div>
+          <div class="five">
+            <input type="button" value="/" onclick="display_value('/')">
+            <input type="button" value="0" onclick="display_value('0')">
+            <input type="button" value="." onclick="display_value('.')">
+            <input type="button" value="=" onclick="evaluate_expression()">
+          </div>
+        </div>
+      </center>
+</body>
+</html>
